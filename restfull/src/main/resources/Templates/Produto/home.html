@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grupo dos 5</title>
+<link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"
+	rel="stylesheet" />
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+	crossorigin="anonymous">
+<link rel="stylesheet" href="../static/style.css" th:href="@{/style.css}">
+</head>
+
+<body>
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light bg-custom ">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Grupo dos 5</a> <a
+				class="navbar-brand" href="#"> <img th:src="@{/imagem/logo.png}" alt="Logo"
+				class="d-inline-block align-text-top">
+			</a>
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+					<li class="nav-item"><a class="nav-link"
+						href="/produto/cadastrar">Cadastar Produtos</a></li>
+					<li class="nav-item"><a class="nav-link"
+						href="/produto/listar">Lista de Produtos</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Contato</a>
+					</li>
+					<li class="nav-item"><a class="nav-link" th:href="@{./Produto/formcliente}">Cadastre-se / Login</a></li>
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div id="background-images"></div>
+
+
+	<!-- Jumbotron -->
+	<section>
+		<div class="jumbotron ">
+			<div class="container">
+				<h1 class="display-4">Bem-vindo à E-commerce Online!</h1>
+				<p class="lead">Aqui você encontra tudo o que precisa com um
+					clique! Desde eletrônicos a roupas, de acessórios a produtos de
+					beleza.</p>
+				<hr class="my-4">
+				<p>Confira nossas ofertas e promoções!</p>
+				<a class="btn btn-primary btn-lg mb-3" href="#" role="button">Ver
+					ofertas</a> <a href="#" class="btn btn-primary btn-lg mb-3"
+					role="button">Comprar</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="py-5">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card mb-5">
+					<img th:src="@{/imagem/cel1.jpg}"
+						alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title">Xaomi</h5>
+						<p class="card-text">Descrição do produto. Lorem ipsum dolor
+							sit amet, consectetur adipiscing elit. Ut at nibh vitae mi
+							vehicula aliquam nec in metus.</p>
+						<a href="#" class="btn btn-primary">Comprar</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card mb-4">
+					<img th:src="@{/imagem/cel2.jpg}"
+						alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title">Sansumg</h5>
+						<p class="card-text">Descrição do produto. Lorem ipsum dolor
+							sit amet, consectetur adipiscing elit. Ut at nibh vitae mi
+							vehicula aliquam nec in metus.</p>
+						<a href="#" class="btn btn-primary">Comprar</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card mb-4">
+					<img th:src="@{/imagem/cel3.jpg}"
+						alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title">Motorola</h5>
+						<p class="card-text">Descrição do produto. Lorem ipsum dolor
+							sit amet, consectetur adipiscing elit. Ut at nibh vitae mi
+							vehicula aliquam nec in metus.</p>
+						<a href="#" class="btn btn-primary">Comprar</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="container">
+			<div id="card-slider" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="card">
+							<img th:src="@{/imagem/can1.jpeg}" class="card-img-top"
+								alt="Card image cap" />
+							<div class="card-body">
+								<h5 class="card-title">Caneca Offline</h5>
+								<p class="card-text">This is a longer card with supporting
+									text below as a natural lead-in to additional content. This
+									content is a little bit longer.</p>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="card">
+							<img th:src="@{/imagem/can2.jpeg}" class="card-img-top"
+								alt="Card image cap" />
+							<div class="card-body">
+								<h5 class="card-title">Caneca estruturas de controle</h5>
+								<p class="card-text">This is a longer card with supporting
+									text below as a natural lead-in to additional content. This
+									content is a little bit longer.</p>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="card">
+							<img th:src="@{/imagem/can3.jpg}" class="card-img-top"
+								alt="Card image cap" />
+							<div class="card-body">
+								<h5 class="card-title">Caneca Primavera Javanesa</h5>
+								<p class="card-text">This is a longer card with supporting
+									text below as a natural lead-in to additional content. This
+									content is a little bit longer.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button"
+					data-bs-target="#card-slider" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button"
+					data-bs-target="#card-slider" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<!-- Produtos em Destaque -->
+	<section class="py-5">
+		<div class="container">
+			<h2 class="text-center mb-5">Produtos em Destaque</h2>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card mb-4">
+						<img th:src="@{/imagem/xb.jpg}"
+							alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Xbox</h5>
+							<p class="card-text">Descrição do produto. Lorem ipsum dolor
+								sit amet, consectetur adipiscing elit. Ut at nibh vitae mi
+								vehicula aliquam nec in metus.</p>
+							<a href="#" class="btn btn-primary">Comprar</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card mb-4">
+						<img th:src="@{/imagem/pc.jpg}"
+							alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Pc Gamer</h5>
+							<p class="card-text">Descrição do produto. Lorem ipsum dolor
+								sit amet, consectetur adipiscing elit. Ut at nibh vitae mi
+								vehicula aliquam nec in metus.</p>
+							<a href="#" class="btn btn-primary">Comprar</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card mb-4">
+						<img th:src="@{/imagem/pl5.jpg}"
+							alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Ps5</h5>
+							<p class="card-text">Descrição do produto. Lorem ipsum dolor
+								sit amet, consectetur adipiscing elit. Ut at nibh vitae mi
+								vehicula aliquam nec in metus.</p>
+							<a href="#" class="btn btn-primary">Comprar</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	</section>
+	<!-- Seção de Destaques -->
+	<section class="py-5">
+		<div class="container">
+			<h2 class="text-center mb-5">Destaques</h2>
+			<div class="row">
+				<div class="col-md-4 mb-4 mb-md-0">
+					<div class="card h-100">
+						<div class="card-body">
+							<h5 class="card-title">Destaque 1</h5>
+							<p class="card-text">Descrição do destaque. Lorem ipsum dolor
+								sit amet, consectetur adipiscing elit. Ut at nibh vitae mi
+								vehicula aliquam nec in metus.</p>
+						</div>
+						<div class="card-footer">
+							<a href="#" class="btn btn-primary">Comprar</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mb-4 mb-md-0">
+					<div class="card h-100">
+						<div class="card-body">
+							<h5 class="card-title">Destaque 2</h5>
+							<p class="card-text">Descrição do produto. Lorem ipsum dolor
+								sit amet, consectetur adipiscing elit. Ut at nibh vitae mi
+								vehicula aliquam nec in metus.</p>
+						</div>
+						<div class="card-footer">
+							<a href="#" class="btn btn-primary">Comprar</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mb-4 mb-md-0">
+					<div class="card h-100">
+						<div class="card-body">
+							<h5 class="card-title">Destaque 3</h5>
+							<p class="card-text">Descrição do produto. Lorem ipsum dolor
+								sit amet, consectetur adipiscing elit. Ut at nibh vitae mi
+								vehicula aliquam nec in metus.</p>
+						</div>
+						<div class="card-footer">
+							<a href="#" class="btn btn-primary">Comprar</a>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+	<!-- Rodapé -->
+	<footer class="py-4 bg-dark">
+		<div class="container">
+			<p class="m-0 text-center text-white">Todos os direitos
+				reservados Kennedycopyright</p>
+		</div>
+	</footer>
+	<!-- Bootstrap core JavaScript -->
+	<script
+		src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+		integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+		integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+		crossorigin="anonymous"></script>
+
+
+	<script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+	<script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+	<script th:src="@{/js/script.js}"></script>
+
+</body>
+
+</html>
